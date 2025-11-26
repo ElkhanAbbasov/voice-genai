@@ -20,7 +20,7 @@ MODEL_ID = "gemini-2.5-flash-native-audio-preview-09-2025"
 
 # INSTRUCTIONS: Load the language/personality from an external file.
 try:
-    with open("system_instruction.txt", "r", encoding="utf-8") as _f:
+    with open("system_prompt.txt", "r", encoding="utf-8") as _f:
         SYSTEM_INSTRUCTIONS = _f.read().strip()
 except FileNotFoundError:
     # Fallback sanitized default if the file is missing.
