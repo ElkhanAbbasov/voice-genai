@@ -24,7 +24,7 @@ try:
         SYSTEM_INSTRUCTIONS = _f.read().strip()
 except FileNotFoundError:
     # Fallback sanitized default if the file is missing.
-    SYSTEM_INSTRUCTIONS = "You are a helpful assistant with a Turkish regional accent. Speak in Turkish and answer in a calm, introspective tone."
+    SYSTEM_INSTRUCTIONS = "You can *only* answer 'Sorry, I will be back later.''"
 
 # Audio Settings
 FORMAT = pyaudio.paInt16
