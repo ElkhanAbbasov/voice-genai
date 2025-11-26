@@ -1,4 +1,4 @@
-**Voice GenAI**
+# Voice GenAI
 
 - **Description:** A FastAPI-based WebSocket server that connects a phone/media stream to Google's Gemini Live audio model for conducting telephone surveys. Includes a local `test_client.py` to test audio streams with a microphone and speaker.
 
