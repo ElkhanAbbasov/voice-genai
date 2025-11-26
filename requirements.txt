@@ -2,3 +2,11 @@ librosa
 soundfile
 google-genai
 python-dotenv
+pymongo
+fastapi
+audioop
+uvicorn
+pyaudio
+markdown
+beautifulsoup4
+

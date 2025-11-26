@@ -1,0 +1,296 @@
+{
+    "1": {
+        "next": 2,
+        "text": "Türkiye Cumhuriyeti vatandaşı mısınız?",
+        "options": ["Evet", "Hayır"]
+    },
+    "2": {
+        "next": 3,
+        "text": "İkametgahınızın kayıtlı olduğu il? (Oy verdiğiniz il işaretlenecek!)"
+    },
+    "3": {
+        "next": 4,
+        "text": "Yaşınızı öğrenebilir miyim?",
+        "options": ["17 yaş ve altı", "18-24", "25-34", "35-44", "45-54", "55-64", "65 yaş ve üstü"]
+    },
+    "4": {
+        "next": 5,
+        "text": "Türkiye'nin genel gidişatını nasıl görüyorsunuz?",
+        "options": ["İyiye gidiyor", "Kötüye gidiyor", "Aynı kalacak"]
+    },
+    "5": {
+        "next": 6,
+        "text": "Türkiye'nin ekonomik gidişatını nasıl buluyorsunuz?",
+        "options": ["İyiye gidiyor", "Kötüye gidiyor", "Aynı kalacak"]
+    },
+    "6": {
+        "next": 7,
+        "text": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın performansını genel olarak nasıl buluyorsunuz?",
+        "options": ["Başarılı", "Başarısız", "Fikrim yok"]
+    },
+    "7": {
+        "next": 8,
+        "text": "Bu sene enflasyon nasıl bir seyir izleyecek?",
+        "options": ["Enflasyon artacak", "Enflasyon azalacak", "Aynı kalacak", "Fikrim yok"]
+    },
+    "8": {
+        "next": 9,
+        "text": "Aşağıdaki ifadelerden hangisi önümüzdeki üç ay için yaptığınız ekonomik planları ifade ediyor?",
+        "options": [
+            "Gereksiz hiçbir yeni harcama yapmayı düşünmüyorum",
+            "Ailem veya kendim için 75.000 TL tutarına kadar yeni bir harcama yapmayı planlıyorum",
+            "Mülk ya da araç almayı düşünüyorum",
+            "Fikrim yok"
+        ]
+    },
+    "9": {
+        "next": 10,
+        "text": "Hükümetin yaşanmakta olan ekonomik sorunları çözeceğine inanıyor musunuz?",
+        "options": ["İnanıyorum", "İnanmıyorum", "Cevap vermek istemiyorum"]
+    },
+    "10": {
+        "next": 11,
+        "text": "Hayat pahalılığı bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "11": {
+        "next": 12,
+        "text": "İşsizlik bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "12": {
+        "next": 13,
+        "text": "Ailenizin ekonomik durumu bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "13": {
+        "next": 14,
+        "text": "İnsan hakları ve özgürlükler bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "14": {
+        "next": 15,
+        "text": "Ülkenin uluslararası saygınlığı bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "15": {
+        "next": 16,
+        "text": "Ülkenin güvenliği bir yıl öncesine göre nasıl?",
+        "options": ["Daha iyi", "Aynı", "Daha kötü", "Fikrim yok"]
+    },
+    "16": {
+        "next": 17,
+        "text": "Son genel seçimlerde (14 Mayıs 2023) oyunuzu hangi partiye verdiniz?",
+        "options": [
+            "AK Parti",
+            "CHP",
+            "MHP",
+            "HDP/Yeşil Sol Parti",
+            "İYİ Parti",
+            "Memleket Partisi",
+            "Türkiye İşçi Partisi (TİP)",
+            "Yeniden Refah Partisi",
+            "Zafer Partisi",
+            "Oy vermedim",
+            "Yaşım tutmuyordu",
+            "Cevap vermek istemiyorum",
+            "Diğer"
+        ]
+    },
+    "17": {
+        "next": 18,
+        "text": "Mayıs 2023 Cumhurbaşkanlığı seçimlerinin ikinci turunda oyunuzu hangi adaya verdiniz?",
+        "options": [
+            "Recep Tayyip Erdoğan",
+            "Kemal Kılıçdaroğlu",
+            "Oy vermedim",
+            "Yaşım tutmuyordu",
+            "Cevap vermek istemiyorum"
+        ]
+    },
+    "18": {
+        "next": 19,
+        "text": "Yarın bir genel seçim olsa oyunuzu hangi partiye verirsiniz?",
+        "options": [
+            "AK Parti",
+            "CHP",
+            "MHP",
+            "DEM Parti",
+            "İYİ Parti",
+            "Yeniden Refah Partisi",
+            "Türkiye İşçi Partisi (TİP)",
+            "Saadet Partisi",
+            "Gelecek Partisi",
+            "DEVA Partisi",
+            "Zafer Partisi",
+            "Anahtar Parti (Yavuz Ağıralioğlu)",
+            "Kararsızım / Fikrim yok",
+            "Oy vermeyeceğim",
+            "Cevap vermek istemiyorum",
+            "Diğer (lütfen belirtin)"
+        ]
+    },
+    "19": {
+        "next": 20,
+        "text": "Ekonomi dışında Türkiye'nın en önemli sorunu nedir?",
+        "options": ["Terör", "Hükümet", "Adalet", "Göçmenler", "Eğitim", "Çevre", "Fikrim yok", "Diğer (lütfen belirtin)"]
+    },
+    "20": {
+        "next": 21,
+        "text": "CHP'li belediyelere yönelik operasyonlara yönelik kanaatiniz nedir?",
+        "options": ["Hukuki bir süreçtir", "Siyasi bir süreçtir", "Fikrim yok"]
+    },
+    "21": {
+        "next": 22,
+        "text": "Devlet Bahçeli'nin Demirtaş tahliyesiyle ilgili açıklamasına dair kanaatiniz nedir?",
+        "options": ["Demirtaş tahliye edilmelidir", "Demirtaş tahliye edilmemelidir", "Fikrim yok"]
+    },
+    "22": {
+        "next": 23,
+        "text": "Ekrem İmamoğlu'nun tutuklandığı davaya dair kanaatiniz nedir?",
+        "options": ["Siyasi bir davadır", "Hukuki bir davadır", "Fikrim yok"]
+    },
+    "23": {
+        "next": 24,
+        "text": "Futbolda şike yapıldığına inanıyor musunuz?",
+        "options": ["Evet inanıyorum", "Hayır inanmıyorum", "Fikrim yok"]
+    },
+    "24": {
+        "next": 25,
+        "text": "PKK'nın silah bırakması sürecine yönelik tutumunuz nedir?",
+        "options": ["Destekliyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "25": {
+        "next": 26,
+        "text": "Sürecin bugüne kadarki gidişatını nasıl değerlendiriyorsunuz?",
+        "options": ["Başarılı", "Başarısız", "Fikrim yok"]
+    },
+    "26": {
+        "next": 27,
+        "text": "PKK silah bırakacağını açıkladı; bu konuda kanaatiniz nedir?",
+        "options": ["Evet, silah bırakacak", "Hayır, silah bırakmayacak", "Fikrim yok"]
+    },
+    "27": {
+        "next": 28,
+        "text": "TBMM'deki Milli Dayanışma Kardeşlik ve Demokrasi Komisyonu çalışmalarına dair kanaatiniz nedir?",
+        "options": ["Başarılı", "Başarısız", "Fikrim yok"]
+    },
+    "28": {
+        "next": 29,
+        "text": "Meclis heyetinin İmralı'ya gidip Öcalan ile görüşmesine dair kanaatiniz nedir?",
+        "options": ["Gidebilir", "Gitmemelidir", "Fikrim yok"]
+    },
+    "29": {
+        "next": 30,
+        "text": "Bugüne kadar kimliğinizden dolayı ayrımcılığa uğradınız mı?",
+        "options": ["Uğradım", "Uğramadım", "Cevap vermek istemiyorum"]
+    },
+    "30": {
+        "next": 31,
+        "text": "Devlet nezdinde Türklerle Kürtlerin ne derece eşit olduğunu düşünüyorsunuz?",
+        "options": ["Her zaman eşit", "Çoğunlukla eşit", "Bazen eşit", "Hiçbir zaman eşit değil", "Fikrim yok"]
+    },
+    "31": {
+        "next": 32,
+        "text": "Türkiye'de bir Kürt sorunu var mı?",
+        "options": ["Evet", "Hayır", "Cevap vermek istemiyorum"]
+    },
+    "32": {
+        "next": 33,
+        "text": "PKK'nın silah bırakması Türkiye'yi daha fazla demokratikleştirecektir. Bu ifadeye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "33": {
+        "next": 34,
+        "text": "PKK'nın silah bırakması, Cumhurbaşkanı Erdoğan'ın tekrar seçilmesine katkı sağlar. Bu ifadeye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "34": {
+        "next": 35,
+        "text": "PKK'nın silah bırakması, DEM Parti'yi Türkiye partisi haline getirir. Bu ifadeye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "35": {
+        "next": 36,
+        "text": "Anayasa'da Kürtleri dışlamayan bir vatandaşlık tanımı yapılmalıdır. Bu öneriye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "36": {
+        "next": 37,
+        "text": "Kürtlere ana dilde eğitim gibi bazı kültürel haklar verilmelidir. Bu öneriye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "37": {
+        "next": 38,
+        "text": "Yerel yönetimlerin yetkileri arttırılmalıdır. Bu öneriye katılıyor musunuz?",
+        "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
+    },
+    "38": {
+        "next": 39,
+        "text": "Abdullah Öcalan'ın cezaevi şartları iyileştirilebilir. Bu düzenlemeyi destekliyor musunuz?",
+        "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "39": {
+        "next": 40,
+        "text": "Kayyım uygulamasına son verilebilir. Bu düzenlemeyi destekliyor musunuz?",
+        "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "40": {
+        "next": 41,
+        "text": "Silah bırakan PKK mensuplarına af çıkarılabilir. Bu düzenlemeyi destekliyor musunuz?",
+        "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "41": {
+        "next": 42,
+        "text": "PKK'ya üyelikten tutuklu bulunan kişilere af çıkarılabilir. Bu düzenlemeyi destekliyor musunuz?",
+        "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "42": {
+        "next": 43,
+        "text": "Selahattin Demirtaş ve tutuklu Kürt siyasetçiler serbest bırakılabilir. Bu düzenlemeyi destekliyor musunuz?",
+        "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
+    },
+    "43": {
+        "next": 44,
+        "text": "Eğitim durumunuz? (En son bitirilen okul/mezun olunan derece işaretlenecek)",
+        "options": ["Herhangi bir okul bitirmemiş", "İlkokul mezunu", "Ortaokul / İlköğretim mezunu", "Lise mezunu", "Üniversite mezunu", "Lisansüstü mezun"]
+    },
+    "44": {
+        "next": 45,
+        "text": "Öğrenci misiniz?",
+        "options": ["Evet, hala üniversitede önlisans/lisans okuyorum", "Evet, yüksek lisansa/doktoraya devam ediyorum", "Hayır", "Cevap vermek istemiyorum"]
+    },
+    "45": {
+        "next": 46,
+        "text": "Mesleğiniz nedir?"
+    },
+    "46": {
+        "next": 47,
+        "text": "Medeni durumunuz nedir?",
+        "options": ["Hiç evlenmedim", "Evliyim", "Boşandım", "Eşim vefat etti / dul", "Cevap vermek istemiyorum"]
+    },
+    "47": {
+        "next": 48,
+        "text": "Gelir diliminiz hangisidir?",
+        "options": ["Düşük gelir", "Alt orta gelir", "Üst orta gelir", "Yüksek gelir"]
+    },
+    "48": {
+        "next": 49,
+        "text": "Kendinizi siyasi görüş açısından nasıl tanımlıyorsunuz?",
+        "options": ["Atatürkçü", "Demokrat", "İslamcı", "Liberal", "Milliyetçi", "Muhafazakâr", "Sosyal demokrat", "Sosyalist", "Ülkücü", "Diğer (lütfen belirtin)"]
+    },
+    "49": {
+        "next": 50,
+        "text": "Kendinizi etnik açıdan nasıl tanımlıyorsunuz?",
+        "options": ["Türk", "Kürt", "Arap", "Laz", "Zaza", "Çerkez", "Diğer (lütfen belirtin)"]
+    },
+    "50": {
+        "next": 51,
+        "text": "Cinsiyetiniz?",
+        "options": ["Kadın", "Erkek"]
+    },
+    "51": {
+        "next": null,
+        "text": "Katılımınız için teşekkür ediyoruz. İletmek istediğiniz herhangi bir görüş varsa lütfen belirtiniz."
+    }
+}
