@@ -6,7 +6,7 @@
     },
     "2": {
         "next": 3,
-        "text": "İkametgahınızın kayıtlı olduğu il? (Oy verdiğiniz il işaretlenecek!)"
+        "text": "eee... İkametgahınızın kayıtlı olduğu il? (Oy verdiğiniz il işaretlenecek!)"
     },
     "3": {
         "next": 4,
@@ -15,12 +15,12 @@
     },
     "4": {
         "next": 5,
-        "text": "Türkiye'nin genel gidişatını nasıl görüyorsunuz?",
+        "text": "Türkiye'nin ıı... genel gidişatını nasıl görüyorsunuz?",
         "options": ["İyiye gidiyor", "Kötüye gidiyor", "Aynı kalacak"]
     },
     "5": {
         "next": 6,
-        "text": "Türkiye'nin ekonomik gidişatını nasıl buluyorsunuz?",
+        "text": "eee... Türkiye'nin ekonomik gidişatını nasıl buluyorsunuz?",
         "options": ["İyiye gidiyor", "Kötüye gidiyor", "Aynı kalacak"]
     },
     "6": {
@@ -30,7 +30,7 @@
     },
     "7": {
         "next": 8,
-        "text": "Bu sene enflasyon nasıl bir seyir izleyecek?",
+        "text": "eee... Bu sene enflasyon nasıl bir seyir izleyecek?",
         "options": ["Enflasyon artacak", "Enflasyon azalacak", "Aynı kalacak", "Fikrim yok"]
     },
     "8": {
@@ -45,7 +45,7 @@
     },
     "9": {
         "next": 10,
-        "text": "Hükümetin yaşanmakta olan ekonomik sorunları çözeceğine inanıyor musunuz?",
+        "text": "Hükümetin ııı... yaşanmakta olan ekonomik sorunları çözeceğine inanıyor musunuz?",
         "options": ["İnanıyorum", "İnanmıyorum", "Cevap vermek istemiyorum"]
     },
     "10": {
@@ -80,7 +80,7 @@
     },
     "16": {
         "next": 17,
-        "text": "Son genel seçimlerde (14 Mayıs 2023) oyunuzu hangi partiye verdiniz?",
+        "text": "eee... Son genel seçimlerde (14 Mayıs 2023) oyunuzu hangi partiye verdiniz?",
         "options": [
             "AK Parti",
             "CHP",
@@ -137,12 +137,12 @@
     },
     "20": {
         "next": 21,
-        "text": "CHP'li belediyelere yönelik operasyonlara yönelik kanaatiniz nedir?",
+        "text": "eee... CHP'li belediyelere yönelik operasyonlara yönelik kanaatiniz nedir?",
         "options": ["Hukuki bir süreçtir", "Siyasi bir süreçtir", "Fikrim yok"]
     },
     "21": {
         "next": 22,
-        "text": "Devlet Bahçeli'nin Demirtaş tahliyesiyle ilgili açıklamasına dair kanaatiniz nedir?",
+        "text": "Devlet Bahçeli'nin Demirtaş ııı... tahliyesiyle ilgili açıklamasına dair kanaatiniz nedir?",
         "options": ["Demirtaş tahliye edilmelidir", "Demirtaş tahliye edilmemelidir", "Fikrim yok"]
     },
     "22": {
@@ -167,7 +167,7 @@
     },
     "26": {
         "next": 27,
-        "text": "PKK silah bırakacağını açıkladı; bu konuda kanaatiniz nedir?",
+        "text": "PKK silah bırakacağını açıkladı; bu konuda ee... kanaatiniz nedir?",
         "options": ["Evet, silah bırakacak", "Hayır, silah bırakmayacak", "Fikrim yok"]
     },
     "27": {
@@ -182,7 +182,7 @@
     },
     "29": {
         "next": 30,
-        "text": "Bugüne kadar kimliğinizden dolayı ayrımcılığa uğradınız mı?",
+        "text": "eee... Bugüne kadar kimliğinizden dolayı ayrımcılığa uğradınız mı?",
         "options": ["Uğradım", "Uğramadım", "Cevap vermek istemiyorum"]
     },
     "30": {
@@ -217,7 +217,7 @@
     },
     "36": {
         "next": 37,
-        "text": "Kürtlere ana dilde eğitim gibi bazı kültürel haklar verilmelidir. Bu öneriye katılıyor musunuz?",
+        "text": "Kürtlere ana dilde eğitim gibi bazı kültürel haklar verilmelidir. ee... Bu öneriye katılıyor musunuz?",
         "options": ["Katılıyorum", "Ne katılıyorum ne katılmıyorum", "Katılmıyorum", "Fikrim yok"]
     },
     "37": {
@@ -227,7 +227,7 @@
     },
     "38": {
         "next": 39,
-        "text": "Abdullah Öcalan'ın cezaevi şartları iyileştirilebilir. Bu düzenlemeyi destekliyor musunuz?",
+        "text": "ee... Abdullah Öcalan'ın cezaevi şartları iyileştirilebilir. Bu düzenlemeyi destekliyor musunuz?",
         "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
     },
     "39": {
@@ -247,7 +247,7 @@
     },
     "42": {
         "next": 43,
-        "text": "Selahattin Demirtaş ve tutuklu Kürt siyasetçiler serbest bırakılabilir. Bu düzenlemeyi destekliyor musunuz?",
+        "text": "Selahattin Demirtaş ve tutuklu Kürt siyasetçiler serbest bırakılabilir. ııı... Bu düzenlemeyi destekliyor musunuz?",
         "options": ["Destekliyorum", "Ne destekliyorum ne desteklemiyorum", "Desteklemiyorum", "Fikrim yok"]
     },
     "43": {
@@ -262,7 +262,7 @@
     },
     "45": {
         "next": 46,
-        "text": "Mesleğiniz nedir?"
+        "text": "ııı... Mesleğiniz nedir?"
     },
     "46": {
         "next": 47,
@@ -291,6 +291,6 @@
     },
     "51": {
         "next": null,
-        "text": "Katılımınız için teşekkür ediyoruz. İletmek istediğiniz herhangi bir görüş varsa lütfen belirtiniz."
+        "text": "eee... Katılımınız için teşekkür ediyoruz. İletmek istediğiniz herhangi bir görüş varsa lütfen belirtiniz."
     }
 }

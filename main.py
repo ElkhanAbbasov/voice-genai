@@ -15,6 +15,7 @@ from pymongo import MongoClient
 load_dotenv()
 API_KEY = os.environ.get("GOOGLE_API_KEY")
 MODEL_ID = "gemini-2.5-flash-native-audio-preview-09-2025"
+
 PORT = int(os.environ.get("PORT", 8080))
 
 # MongoDB Config
@@ -98,6 +99,29 @@ SESSION_STATE: Dict[str, int] = {}
 
 # --- 4. SAVE LOGIC (Single & Batch) ---
 
+def goBackQuestion(current_q_no: int, session_id: str) -> str:
+    """Retrieves the previous question when user wants to go back."""
+    prev_id = current_q_no - 1
+    if prev_id < 1:
+        return json.dumps({"status": "error", "message": "Cannot go back further (already at Q1)."})
+    
+    prev_q_data = SURVEY_FLOW.get(prev_id)
+    if not prev_q_data:
+        return json.dumps({"status": "error", "message": "Previous question not found."})
+    
+    # Update session state to keep in sync
+    if session_id:
+        SESSION_STATE[session_id] = prev_id
+        
+    print(f"⬅️ GO BACK: Q{current_q_no} -> Q{prev_id}")
+    
+    return json.dumps({
+        "status": "success",
+        "q_no": prev_id,
+        "question": prev_q_data["text"],
+        "question_options": prev_q_data.get("options", [])
+    })
+
 def _save_single_answer(params: Dict[str, Any]) -> str:
     """Writes a single answer to MongoDB and returns the next question."""
     try:
@@ -163,9 +187,29 @@ def _save_single_answer(params: Dict[str, Any]) -> str:
             pass
         retry = int(params.get("retry_count", 0))
 
+        # FIX 1: HANDLE START OF SURVEY (Q=0)
+        if q_no == 0:
+            # This is the "start survey" signal. Do NOT save to DB.
+            # Just return Question 1.
+            print("🚀 STARTING SURVEY (Q0 -> Q1)")
+            next_q_id = 1
+            if session_id:
+                SESSION_STATE[session_id] = next_q_id
+            
+            q1_data = SURVEY_FLOW[1]
+            return json.dumps({
+                "status": "success",
+                "q_no": 1,
+                "question": q1_data["text"],
+                "question_options": q1_data.get("options", [])
+            })
+
         # If question number is missing (0), try to recover from session state
         if q_no == 0 and session_id:
             q_no = int(SESSION_STATE.get(session_id, 0) or 0)
+            if q_no == 0:
+                # If still 0, treat as start request
+                return _save_single_answer({**params, "question_number": 0})
 
         print(f"📝 SAVING [Single]: Q{q_no} | Answer: {match_ans}")
 
@@ -208,12 +252,12 @@ def _save_single_answer(params: Dict[str, Any]) -> str:
 
         next_q_data = SURVEY_FLOW[next_q_id]
 
-        # Return the Next Question to Gemini so it can speak it immediately
+        # FIX 3: ALIGN KEYS WITH PROMPT (q_no, question, question_options)
         return json.dumps({
             "status": "success",
-            "next_q_no": next_q_id,
-            "next_question": next_q_data["text"],
-            "options": next_q_data.get("options", [])
+            "q_no": next_q_id,
+            "question": next_q_data["text"],
+            "question_options": next_q_data.get("options", [])
         })
 
     except Exception as e:
@@ -287,6 +331,17 @@ tools_config = [
                     },
                     "required": ["question_number", "user_answer", "answer", "retry_count"]
                 }
+            },
+            {
+                "name": "goBackQuestion",
+                "description": "Returns the details of the previous question when the user wants to go back.",
+                "parameters": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "current_q_no": {"type": "INTEGER", "description": "The current question number the user is on."}
+                    },
+                    "required": ["current_q_no"]
+                }
             }
         ]
     }
@@ -330,7 +385,8 @@ async def handle_media_stream(websocket: WebSocket):
     async with client.aio.live.connect(model=MODEL_ID, config=config) as session:
         print("--> Gemini Live Connected")
         
-        SESSION_STATE[current_session] = 1
+        # FIX: INIT SESSION TO 0, NOT 1
+        SESSION_STATE[current_session] = 0
         await session.send_client_content(
             turns=[types.Content(parts=[types.Part(text="System: The call has started. Begin the survey now.")])],
             turn_complete=True
@@ -371,6 +427,8 @@ async def handle_media_stream(websocket: WebSocket):
                         # B. Tool Calls
                         if response.tool_call:
                             for fc in response.tool_call.function_calls:
+                                
+                                # HANDLE SAVE ANSWER
                                 if fc.name == "saveAnswer":
                                     args = fc.args
                                     print(f"--> Tool Called: saveAnswer for Q{args.get('question_number')}")
@@ -394,6 +452,20 @@ async def handle_media_stream(websocket: WebSocket):
                                     result_json = saveAnswer(full_params)
 
                                     # RESPOND TO GEMINI using dedicated tool response API
+                                    await session.send_tool_response(
+                                        function_responses=[types.FunctionResponse(
+                                            name=fc.name, id=fc.id, response=json.loads(result_json)
+                                        )]
+                                    )
+                                
+                                # FIX 2: HANDLE GO BACK QUESTION
+                                elif fc.name == "goBackQuestion":
+                                    args = fc.args
+                                    print(f"--> Tool Called: goBackQuestion from Q{args.get('current_q_no')}")
+                                    
+                                    current_q = int(args.get("current_q_no", 0))
+                                    result_json = goBackQuestion(current_q, current_session)
+                                    
                                     await session.send_tool_response(
                                         function_responses=[types.FunctionResponse(
                                             name=fc.name, id=fc.id, response=json.loads(result_json)
